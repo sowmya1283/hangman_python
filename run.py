@@ -4,7 +4,40 @@
 
 import random
 words =("apple", "orange", "banana", "coconut", "pineapple")
-print(words)
 
 #dictionary of Key():
+hangmanart = {
+    0: (" ",
+        " ",
+        " "),
+    1: ("o",
+        " ",
+        " "),
+    2: ("o",
+        "|",
+        " "),
+    3: ("o",
+        "/|",
+        ""),
+    4: ("o",
+        "/|\\",
+        ""),
+    5: ("o",
+        "/|\\",
+        "/"),
+    6: ("o",
+        "/|\\",
+        "/\\")
+}
 
+def display_hangman(trials):
+    pass
+
+def display_hint(hint):
+    pass
+
+def display_answer(answer):
+    pass
+
+def main():
+    pass
