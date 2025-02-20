@@ -47,7 +47,7 @@ def main():
     answer = random.choice(words)  #randomly select a word from the list
     hint = ["_"] * len(answer)  #create a hint list with the same length as the answer
 
-    trials = 4    #initialize the number of trials (Wrong answers) to 0
+    trials = 0    #initialize the number of trials (Wrong answers) to 0
    
     guessed_letters = set()    #initialize the set of guessed letters in a set
     is_running = True #When initially run this program, set the value to true, once we finish the game turn this to a false
