@@ -76,7 +76,16 @@ def main():
         else:
             trials += 1
 
-
-
+        if "_" not in hint:
+            display_hangman(trials)
+            display_answer(answer)
+            print("YOU WIN!")
+            is_running = False
+        elif trials >= len(hangmanart) -1:
+            display_hangman(trials)
+            display_answer(answer)
+            print("YOU LOSE!")
+            is_running = False
+ 
 if __name__ == "__main__":
     main()
