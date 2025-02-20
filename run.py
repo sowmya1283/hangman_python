@@ -10,28 +10,31 @@ hangmanart = {
     0: (" ",
         " ",
         " "),
-    1: ("o",
+    1: (" o",
         " ",
         " "),
-    2: ("o",
+    2: (" o",
         "|",
         " "),
-    3: ("o",
+    3: (" o",
         "/|",
         ""),
-    4: ("o",
+    4: (" o",
         "/|\\",
         ""),
-    5: ("o",
+    5: (" o",
         "/|\\",
         "/"),
-    6: ("o",
+    6: (" o",
         "/|\\",
-        "/\\")
+        "/ \\")
 }
 
 def display_hangman(trials):
-    pass
+    print("********")
+    for line in hangmanart[trials]:
+        print(line)
+    print("********")
 
 def display_hint(hint):
     pass
@@ -40,20 +43,12 @@ def display_answer(answer):
     pass
 
 def main():
-    #randomly select a word from the list
-    answer = random.choice(words) 
-
-    #create a hint list with the same length as the answer
-    hint = ["_"] * len(answer)  
-
-    #initialize the number of trials (Wrong answers) to 0
-    trials = 0    
-
-    #initialize the set of guessed letters in a set
-    guessed_letters = set()
-
-    #When initially run this program, set the value to true, once we finish the game turn this to a false
-    is_running = True
+   
+    answer = random.choice(words)  #randomly select a word from the list
+    hint = ["_"] * len(answer)  #create a hint list with the same length as the answer
+    trials = 6     #initialize the number of trials (Wrong answers) to 0
+    guessed_letters = set()    #initialize the set of guessed letters in a set
+    is_running = True #When initially run this program, set the value to true, once we finish the game turn this to a false
 
 
     while is_running:
