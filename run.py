@@ -63,25 +63,25 @@ def main():
             print("Invalid input")
             continue
 
-        if guess in guessed_letters:
+        if guess in guessed_letters: #check if the guess is in the set of guessed letters
             print(f"You already guessed the letter {guess}")
             continue
 
-        guessed_letters.add(guess)
+        guessed_letters.add(guess) #add the guess to the set of guessed letters
         
-        if guess in answer:
+        if guess in answer: #check if the guess is in the answer
             for i in range(len(answer)):
                 if answer[i] == guess:
                     hint[i] =guess
         else:
             trials += 1
 
-        if "_" not in hint:
+        if "_" not in hint: #check if the hint list has no more underscores
             display_hangman(trials)
             display_answer(answer)
             print("YOU WIN!")
             is_running = False
-        elif trials >= len(hangmanart) -1:
+        elif trials >= len(hangmanart) -1: #check if the number of trials is greater than or equal to the length of the hangman art
             display_hangman(trials)
             display_answer(answer)
             print("YOU LOSE!")
