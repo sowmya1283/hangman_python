@@ -64,15 +64,18 @@ def main():
             continue
 
         if guess in guessed_letters:
-            print("You already guessed that letter")
+            print(f"You already guessed the letter {guess}")
             continue
-        
+
         guessed_letters.add(guess)
         
         if guess in answer:
             for i in range(len(answer)):
                 if answer[i] == guess:
                     hint[i] =guess
+        else:
+            trials += 1
+
 
 
 if __name__ == "__main__":
