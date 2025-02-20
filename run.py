@@ -55,10 +55,11 @@ def main():
     #When initially run this program, set the value to true, once we finish the game turn this to a false
     is_running = True
 
+
     while is_running:
-        display_hangman(trials)
-        display_hint(hint)
-        guess = input("enter a letter:").lower()
+        display_hangman(trials) #call the function to display the hangman
+        display_hint(hint) #call the function to display the hint
+        guess = input("enter a letter: ").lower() #ask the user to enter a letter and convert it to lowercase
     
     print(hint)
 
