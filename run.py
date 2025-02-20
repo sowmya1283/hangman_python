@@ -62,6 +62,12 @@ def main():
         if len(guess) != 1 or not guess.isalpha(): #check if the user entered more than one letter
             print("Invalid input")
             continue
+
+        if guess in guessed_letters:
+            print("You already guessed that letter")
+            continue
+        
+        guessed_letters.add(guess)
         
         if guess in answer:
             for i in range(len(answer)):
