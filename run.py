@@ -59,7 +59,7 @@ def main():
         #display_answer(answer)  #call the function to display the answer (for testing purposes)
         guess = input("enter a letter: ").lower() #ask the user to enter a letter and convert it to lowercase
 
-        if len(guess) != 1: #check if the user entered more than one letter
+        if len(guess) != 1 or not guess.isalpha(): #check if the user entered more than one letter
             print("Invalid input")
             continue
         
