@@ -5,7 +5,7 @@
 import random
 words =("apple", "orange", "banana", "coconut", "pineapple")
 
-#dictionary of Key():
+#dictionary of Key and tuple values, key to describe no of incorrect guesses, tubple to store ascii art character to hangman
 hangmanart = {
     0: (" ",
         " ",
@@ -40,8 +40,28 @@ def display_answer(answer):
     pass
 
 def main():
-    pass
+    #randomly select a word from the list
+    answer = random.choice(words) 
+
+    #create a hint list with the same length as the answer
+    hint = ["_"] * len(answer)  
+
+    #initialize the number of trials (Wrong answers) to 0
+    trials = 0    
+
+    #initialize the set of guessed letters in a set
+    guessed_letters = set()
+
+    #When initially run this program, set the value to true, once we finish the game turn this to a false
+    is_running = True
+
+    while is_running:
+        display_hangman(trials)
+        display_hint(hint)
+        guess = input("enter a letter:").lower()
+    
+    print(hint)
+
 
 if __name__ == "__main__":
     main()
-    
