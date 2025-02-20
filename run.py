@@ -37,16 +37,18 @@ def display_hangman(trials):
     print("********")
 
 def display_hint(hint):
-    pass
+    print(" ".join(hint))
 
 def display_answer(answer):
-    pass
+    print(" ".join(answer))
 
 def main():
    
     answer = random.choice(words)  #randomly select a word from the list
     hint = ["_"] * len(answer)  #create a hint list with the same length as the answer
-    trials = 6     #initialize the number of trials (Wrong answers) to 0
+
+    trials = 4    #initialize the number of trials (Wrong answers) to 0
+   
     guessed_letters = set()    #initialize the set of guessed letters in a set
     is_running = True #When initially run this program, set the value to true, once we finish the game turn this to a false
 
@@ -54,9 +56,13 @@ def main():
     while is_running:
         display_hangman(trials) #call the function to display the hangman
         display_hint(hint) #call the function to display the hint
+        #display_answer(answer)  #call the function to display the answer (for testing purposes)
         guess = input("enter a letter: ").lower() #ask the user to enter a letter and convert it to lowercase
-    
-    print(hint)
+
+        if guess in answer:
+            for i in range(len(answer)):
+                if answer[i] == guess:
+                    hint[i] =guess
 
 
 if __name__ == "__main__":
