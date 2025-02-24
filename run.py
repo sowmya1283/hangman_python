@@ -60,6 +60,7 @@ def menu():
     """
     print("********")
     print("HANGMAN")
+    print("********")
     print("Menu")
     print("1. New Game")
     print("2. Instructions")
