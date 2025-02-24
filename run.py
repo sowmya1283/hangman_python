@@ -77,7 +77,7 @@ def menu():
         elif choice == "2":
             can_continue = True
             display_instructions()
-        elif choice == "3"
+        elif choice == "3":
             can_continue == True
             print("Thank you for playing Hangman")
             exit()
@@ -141,7 +141,8 @@ def display_instructions():
     menu()    
 
 
-def main(): #main function
+def main():
+    menu() #main function
    
     
 if __name__ == "__main__":
