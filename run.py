@@ -102,7 +102,7 @@ def play_game():
         guess = input("enter a letter: ").lower()
 
         if len(guess) != 1 or not guess.isalpha():
-            print("Invalid input")
+            print("Invalid input, please enter a single letter")
             continue
 
         if guess in guessed_letters:

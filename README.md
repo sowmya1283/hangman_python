@@ -1,26 +1,18 @@
 # **The Hangman Game**
 ## **Overview**
 
-Hangman is a classic word-guessing game where players try to figure out a hidden word by guessing letters, one at a time. The game is typically played with two participants—one who thinks of a word and the other who tries to guess it. The game can also be played solo or with a computer.
+Hangman is a word guessing game. its considered as one of the classic game where a player will try to figure out the word by guessing letters by entering one at a time. This is an online game and it's for educational or entertainment purpose.
 
-Basic Rules:
-Word Selection: One player thinks of a secret word and provides the number of letters in the word, represented by blanks (_ _ _ _ _).
+Basic Rule is that a user will be displayed with the blank spaces (underscores) to guess the word. Based on number of underscores user can guess a letter for each trails. There will be 6 trails. If the guessed letter is in the word, then it replaces the corresponding underscore with a guessed letter. For each incorrect guess, a body part (head, arms, torso and legs) is added. After of 6 guesses the game ends in a loss for the guessers.
 
-Guessing: The other player (or players) guesses a letter. If the guessed letter is in the word, it replaces the corresponding blank spaces. If it's incorrect, a part of the "hangman" figure is drawn.
-
-Drawing the Hangman: The game usually involves drawing a stick figure of a man being hanged. For each incorrect guess, a body part (head, torso, arms, legs) is added, and after a set number of incorrect guesses (often 6 or 7), the game ends in a loss for the guesser.
-
-Winning and Losing:
-
+Winning and losing of the game will depend on the user guessing all the letters in the word before the no of wrong guesses trails are over.
 Win: The game is won if the player guesses all the letters in the word before the hangman figure is fully drawn.
 Loss: The game is lost if the guesser runs out of chances (i.e., if the hangman is fully drawn and the word remains incomplete).
 
-The game is Python-based and uses a game Board class, functions, for loops, while loops and if/elif/else statements to achieve the desired outcome.
-
-It features space-based ASCII art, and contains various references to hangman characters.
+The game is Python-based and uses class, functions, for loops, while loops and if/elif/else statements to achieve the desired outcome. It features space-based ASCII art, and contains various references to hangman characters.
 
 
-Click [here](https://battleships-1977.herokuapp.com/) to see the final deployment of the game
+Click [here](https://hangmangame-python-93af8000a2f1.herokuapp.com/) to see the final deployment of the game
 
 ![Am I Responsive Screenshot](assets/images/bs1977-am-i-responsive.png)
 ![Am I Responsive Screenshot](assets/images/bs1977-am-i-responsive-name.png)
@@ -59,30 +51,31 @@ Click [here](https://battleships-1977.herokuapp.com/) to see the final deploymen
 * People who want to improve their vocabulary.
 * People who to play hangman game online.
 * People who wants to get rid of boredom and entertain themselves.
-* Aspiring coders who want to learn python coding through this game.
+* Aspiring coders who want to learn python coding, can refer the cited tutorials.
 
 ​
 #### **User Stories:**
-* As a user, I want to understand the premise of the game.
-* As a user, I want to quickly learn and understand the rules of the game and its instructions.
-* As a user, I want a clean and simple user interface (UI).
+* As a user, I want to start a new game of hangman.
+* As a user, I want to learn and understand the instructions.
+* As a user, I want to select from Menu (Whether I want to play game, see instructions or exit).
 * As a user, I want the game to run smoothly and bug-free.
-* As a user, I want to be able to choose whether or not to play again when the game ends.
-* As a user, I want to be able to win against the computer.
+* As a user, when I win or lose I should get a clear message about game status.
+* As a user, when I provide invalid characters or inpit, I should be displayed with the proper error messages.
 
 ​
 #### **Site Aims:**
-* To offer the user a smooth and bug free version of a classic game with a slightly different twist.
-* To provide a clean and simple interface for the user with no need to reference external sources.
-* To provide clear instructions and a win condition.
-* To provide an enjoyable user experience of playing battleships.
-* To provide an interesting and entertaining Star Wars-based version of the game.
+* To offer user a online, bug free and smooth version of classic hangman game. 
+* To provide a user interface which is clean and simple with no need to refernce external sources.
+* To provide clear instructions on how to the game.
+* To provide an enjoyable user experience of playing hangman guessing game.
 
 <br>
 
 #### **Lucid Chart:**
 
-To help with the planning stages​​ of this project, I used [LucidChart](https://www.lucidchart.com)
+Project planning has been done with the Lucid Chart[LucidChart](https://www.lucidchart.com).
+
+
 This proved to be very useful tool when it came to visualising the various processes involved in recreating a Battleships style game. Whilst the concept is quite simple, the logic involved proved slightly more difficult.
 
 This is the flow chart which assisted the development of the game:
@@ -96,23 +89,23 @@ This is the flow chart which assisted the development of the game:
 #### **Colour Scheme:**
 ​
 
-* Not in the scope of this project, however I used cyan text for the start screen to evoke a connection with the Star Wars theme. I then used yellow for the subsequent text for the same reason.
+* Not in scope for the current project.
 
 ​
 #### **Typography**
 ​
-* Not in the scope of this project.
+* Not in scope for the current project.
 
 ​<br>
 
 
 ## **Features**
 
-#### **Data Model**
+#### **Menu**
 
 * The game uses a Board class. It is used to create instances of the player and CPU and guess boards. Only the player and player_guess boards are printed to the terminal through the display_boards method. The class stores the board size, board owner and shield strength. There are methods to input ship coordinates, populate the board, logic for CPU guesses. There are also methods to check and validate user input as well as prevent any ships overlapping.
 ​
-#### **Start Screen** 
+#### **Instructions** 
 
 ![Screenshot of start screen](assets/images/bs77-start-screen.png)
 
@@ -122,7 +115,7 @@ This is the flow chart which assisted the development of the game:
 
 * The os.sys("clear") function is used to clear the screen and the user is then presented with ASCII text intended to emulate the Star Wars movie font. They are prompted to enter their name using the get_name function which stores the username in a variable for use in the game. They are then presented with a short welcome message and short backstory explaining enemy ships have entered the area. The user can press enter to proceed to the next screen.
 
-#### **Pre-Game**
+#### **Play Game Section**
 
 ![Screenshot of ship types](assets/images/bs77-ship-types.png)
 
@@ -141,18 +134,12 @@ This is the flow chart which assisted the development of the game:
 
 * os is used to clear the screen once again and the player board is printed to the terminal. It displays the player name and the shield strength at the starting value of 10. The place_ships method is called so the player is asked to place each ship by choosing whether it will be aligned horizontally or vertically. Any input other than 'h'/'H' or 'v'/'V' will be invalid and the user will be asked to try again. The process will loop until all ships have been assigned coordinates.
 
-#### **Gameplay**
+#### **Exit Section**
 
 ![Screenshot of player hitting ship](assets/images/bs77-hit-ship.png)
 
 * The populate_boards method adds the user and CPU ships to their respective boards. The user cannot see where the CPU ships are. The game is set up so the user goes first. The player_attack method takes input from the user to guess enemy ship coordinates on the x and y axes. The first CPU guess is a random choice on the board. Upon a successful hit, the CPU will attempt to guess on an adjacent tile. Click the highlighted text to see screenshots of the player entering invalid [row](assets/images/bs77-invalid-row.png) or [column](assets/images/bs77-invalid-column.png) coordinates. The user cannot enter the same coordinates twice. Most of the game logic is in the play_game function which handles updating and appending the relevant boards. It also handles decrementing the shield counter. The game will continue to run until either the player or CPU shield counters reaches zero.
 
-
-#### **Game Over** 
-![Screenshot of play again option](assets/images/bs77-play-again.png)
-![Screenshot of choosing not to play again](assets/images/bs77-play-again-no.png)
-
-* Upon winning or losing the game, an ASCII-based message is displayed before the user is given the option of playing a new game. If this option is chosen, the game resets and starts from the beginning. If the user chooses to quit, they are presented with s short message in keeping with the theme of the game.
 
 <br>
 
@@ -268,7 +255,7 @@ The project was deployed to [Heroku](https://www.heroku.com) using the below pro
    * Clicking either "Enable Automatic Deploys" for automatic deployment when you push updates to Github.  
    * Select the correct branch for deployment from the drop-down menu and click the "Deploy Branch" button for manual deployment. 
 
-The final deployment can be viewed [here](https://)
+The final deployment can be viewed [here](https://hangmangame-python-93af8000a2f1.herokuapp.com/)
 ​
 ## **Tech**
 ​
@@ -285,7 +272,7 @@ The following library was used:
 
 ## **Software**
 
-The following software was used:
+The following software are used:
 
 - VS Code : To create code and pushing it to the github
 - Git (Gitpod and Github) : Used for version controlling.
@@ -302,7 +289,7 @@ The following software was used:
 ## **Credits**
 
 * A youtube tutorial which helped me to understand and build logic for hangman game was really great.
-[Bro Code](https://www.youtube.com/watch?v=ag8NtD1e0Kc). Based on this tutorial, I have used his all his logic to build the game. then later it is enhanced with metors guidance and suggestions.
+[Bro Code](https://www.youtube.com/watch?v=ag8NtD1e0Kc). Based on this tutorial, I have used the logic to build the game. Then later it is enhanced with mentors guidance and suggestions.
 
 * Another youtube tutorial related to hangman game was very helpful initially to understand on how to play the game. The course is by [Triple S Games](https://www.youtube.com/watch?v=cGOeiQfjYPk) 
 
@@ -311,7 +298,7 @@ The following software was used:
 * I have also used Chat-GPT to understand the Hangman game and its features. [Chat-GPT](https://chatgpt.com/)
 
 ### **Honourable mentions**
-* Many thanks to my mentor, Richard Wells, who is always very helping and guiding me whenever I needed. He is very dedicated and kind person who gave me valuable feedback and ideas to enhance the project. He is true inspirational and motivational for me in my current journey.
+* Many thanks to my mentor, Richard Wells, who is always guiding me and helping me with the project. He is very dedicated and kind person who   gave me valuable feedback and ideas to enhance the project. 
 * Many thanks to code institute student support, they always helped with python errors and tutored me whenever required.
 * Many thanks to code institute community in slack. 
 * Many thanks to family and friends who are always an inspiration to me.
