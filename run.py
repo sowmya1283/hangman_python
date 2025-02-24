@@ -3,9 +3,11 @@
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
 
 import random
-words =("apple", "orange", "banana", "coconut", "pineapple")
+from words import WORDS
 
-#dictionary of Key and tuple values, key to describe no of incorrect guesses, tubple to store ascii art character to hangman
+"""
+Dictionary of Key and tuple values, key to describe no of incorrect guesses, tuple to store ascii art character to hangman
+"""
 hangmanart = {
     0: (" ",
         " ",
@@ -30,21 +32,68 @@ hangmanart = {
         "/ \\")
 }
 
+
+
 def display_hangman(trials):
+    """
+    Function to display the hangman
+    """
     print("********")
     for line in hangmanart[trials]:
         print(line)
     print("********")
 
-def display_hint(hint):
+
+def display_hint(hint):    
+    """
+    Function to display the hint
+    """
     print(" ".join(hint))
 
+
 def display_answer(answer):
+    """
+    Function to display the answer 
+    """
     print(" ".join(answer))
 
-def main():
+
+def menu():
+    """
+    Function to display the menu
+    """
+    print("********")
+    print("HANGMAN")
+    print("Menu")
+    print("1. New Game")
+    print("2. Instructions")
+    print("3. Exit")
+    can_continue = False
+    while not can_continue:
+        choice = input("Enter your choice: ")
+        if choice == "1":
+            can_continue = True
+            play_game()
+        elif choice == "2":
+            can_continue = True
+            display_instructions()
+        elif choice == "3"
+            can_continue == True
+            print("Thank you for playing Hangman")
+            exit()
+        else:
+            print("Invalid choice. Please try again")
+
+
+def play_game():
+    print("playing game")  
+
+def display_instructions():
+    print("Instructions")        
+
+def main(): #main function
    
-    answer = random.choice(words)  #randomly select a word from the list
+    answer = random.choice(WORDS)  #randomly select a word from the list
     hint = ["_"] * len(answer)  #create a hint list with the same length as the answer
 
     trials = 0    #initialize the number of trials (Wrong answers) to 0
