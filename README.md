@@ -1,12 +1,6 @@
 # **The Hangman Game**
 ## **Overview**
 
-Hangman is a word guessing game
-
-classic word guessing game where players attempt to guess a hidden word by suggesting letters. The word is represented by blanks, and the player guesses one letter at a time. With each incorrect guess, a part of a stick figure is drawn, representing a "hangman." The game ends when the player either guesses the word correctly or the stick figure is fully drawn (representing a failed attempt).
-
-
-
 Hangman is a classic word-guessing game where players try to figure out a hidden word by guessing letters, one at a time. The game is typically played with two participants—one who thinks of a word and the other who tries to guess it. The game can also be played solo or with a computer.
 
 Basic Rules:
@@ -160,7 +154,6 @@ This is the flow chart which assisted the development of the game:
 
 * Upon winning or losing the game, an ASCII-based message is displayed before the user is given the option of playing a new game. If this option is chosen, the game resets and starts from the beginning. If the user chooses to quit, they are presented with s short message in keeping with the theme of the game.
 
-
 <br>
 
 ​
@@ -169,9 +162,9 @@ This is the flow chart which assisted the development of the game:
 There can be many areas where the game can be enhanced. But due to project tight deadline and due to the challenges the scope was limited
 Further enhancements can be as follows.
 ​
-* Adding a timer to guess a letter.
-* Introduce different categories. (Currently only flower words are guessed.)
-* Option to randlomly quitting game in between.
+* Adding a timer while guessing a letter.
+* Introduce different categories. (Currently only flower names/words are guessed.)
+* Option to randlomly quitting the game in between.
 * An hint system to get a user about the word
 
 ​
@@ -180,8 +173,7 @@ Further enhancements can be as follows.
 **Functionality**
 
 * Implementation 🏭: Check whether user is able to play game from start to finish
-I wanted to make sure the game performed as expected from start to finish.
-* Test 🧪: Played the game locally multiple times.
+* Test 🧪: Played the game locally many times.
 * Result 🏆: The game worked as expected
 * Verdict ✅: PASS
 
@@ -201,12 +193,13 @@ I wanted to make sure the game performed as expected from start to finish.
 
 <br>
 
-* Implementation 🏭: Check the game ends as expected and offers the play again option upon completion.
-* Test 🧪: I played the game multiple times, winning and losing. I selected play again and quit at random.
-* Result 🏆: The game worked as anticipated with no errors.
+* Implementation 🏭: Check 
+* Test 🧪: I played the 
+* Result 🏆: The 
 * Verdict ✅: Test passed.
 <br>
 ​
+
 **Validators**
 
 * The PEP8 Online Validator was down when creating this project, however I added a PEP8 validator to my workspace by running the command: "pip3 install pycodestyle". The results can be found [here](assets/images/bs1977-pycodestyle.png)
@@ -238,21 +231,17 @@ Some of the bugs were identified during testing. They are listed below.
 <br>
 
 * 🐞 - Menu list was wrongly ordered
-* ⚒️ - The SCSS was too CPU intensive on some devices.
-* ✅ - I used a different background animation which was more subtle but works on all devices in testing.
+* ⚒️ - 
+* ✅ - I
 
 <br>
-
-* 🐞 - The game was printing too much text for the size of the terminal so the screen was overloaded with information.
-* ⚒️ - There is a lot of information to deliver to the user and it all displayed at once which could be overwhelming.
-* ✅ - Imported the os and time libraries so I could clear the terminal before delivering the next stage of the game, time was used to slow down printing to the terminal and also simulate computer thinking.
 
 
 <br>
 
 ## **Unfixed Bugs**
 
-* There are no known unfixed bugs.
+* All the bugs which have been identified have been fixed and there are no unknow defects.
 
 ## **Deployment**
 
@@ -279,11 +268,11 @@ The project was deployed to [Heroku](https://www.heroku.com) using the below pro
    * Clicking either "Enable Automatic Deploys" for automatic deployment when you push updates to Github.  
    * Select the correct branch for deployment from the drop-down menu and click the "Deploy Branch" button for manual deployment. 
 
-The final deployment can be viewed [here](https://battleships-1977.herokuapp.com/)
+The final deployment can be viewed [here](https://)
 ​
 ## **Tech**
 ​
-I used the following technologies for the Battleships 1977 project:
+Have used the following technologies to build the Hangman project:
 ​
 - Python
 
@@ -291,7 +280,7 @@ I used the following technologies for the Battleships 1977 project:
 
 The following library was used:
 
-* Random - Used to generate random numbers for CPU ship placement, CPU guessing and CPU attacks.
+* Random - Used to generate random choice of words to be selected to play the game.
 
 
 ## **Software**
@@ -299,13 +288,13 @@ The following library was used:
 The following software was used:
 
 - VS Code : To create code and pushing it to the github
-- Git (Gitpod and Github) : Used for version  controlling.
+- Git (Gitpod and Github) : Used for version controlling.
 - Heroku is used for deploying the project.
 - Lucid Chart is used to create the flow chart of the project.
 
 ### **Media:**
 
-* Not in the scope for the current project.
+* Not in scope for the current project.
 ​
 <br>
 
@@ -313,15 +302,16 @@ The following software was used:
 ## **Credits**
 
 * A youtube tutorial which helped me to understand and build logic for hangman game was really great.
-[Bro Code](https://www.youtube.com/watch?v=ag8NtD1e0Kc) were very helpful in helping me gain an understanding of the logic and necessary code to develop the project. The code to display the board is based on one of his tutorials. I also used his code to convert the column numbers to letters. However, this project is class-based and has been developed with many more features.
+[Bro Code](https://www.youtube.com/watch?v=ag8NtD1e0Kc). Based on this tutorial, I have used his all his logic to build the game. then later it is enhanced with metors guidance and suggestions.
 
-* Another youtube tutorial related to hangman game was initially helpful to understand on how to play the game. The course is by [Triple S Games](https://www.youtube.com/watch?v=cGOeiQfjYPk) 
+* Another youtube tutorial related to hangman game was very helpful initially to understand on how to play the game. The course is by [Triple S Games](https://www.youtube.com/watch?v=cGOeiQfjYPk) 
 
-* Course material in Scrimba was also very helpful for me to understand python in a short time.
+* Course material in Scrimba was also very helpful for me to understand python in a short time. [Scrimba-Python](https://scrimba.com/learn-python-c03/~00)
 
+* I have also used Chat-GPT to understand the Hangman game and its features. [Chat-GPT](https://chatgpt.com/)
 
 ### **Honourable mentions**
-* Many thanks to my mentor, Richard Wells, who is always avialable and guiding me whenever I needed. He is very dedicated and kind who gave me valuable feedback and ideas to enhance the project. He is true inspirational and motivational.
+* Many thanks to my mentor, Richard Wells, who is always very helping and guiding me whenever I needed. He is very dedicated and kind person who gave me valuable feedback and ideas to enhance the project. He is true inspirational and motivational for me in my current journey.
 * Many thanks to code institute student support, they always helped with python errors and tutored me whenever required.
 * Many thanks to code institute community in slack. 
 * Many thanks to family and friends who are always an inspiration to me.
