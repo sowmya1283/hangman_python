@@ -85,14 +85,7 @@ def menu():
             print("Invalid choice. Please try again")
 
 
-def play_game():
-    print("playing game")  
-
-def display_instructions():
-    print("Instructions")        
-
-def main(): #main function
-   
+def play_game(): 
     answer = random.choice(WORDS)  #randomly select a word from the list
     hint = ["_"] * len(answer)  #create a hint list with the same length as the answer
 
@@ -135,6 +128,21 @@ def main(): #main function
             display_answer(answer)
             print("YOU LOSE!")
             is_running = False
- 
+
+
+def display_instructions():
+    print("Instructions to play the game")
+    print("1. The computer will randomly select a word from the list")
+    print("2. You have to guess the word by entering a letter")
+    print("3. You have 6 chances to guess the word")
+    print("4. If you guess the word before 6 chances, you win")
+    print("5. If you don't guess the word before 6 chances, you lose")
+    input("Please enter to go back to the menu")
+    menu()    
+
+
+def main(): #main function
+   
+    
 if __name__ == "__main__":
     main()
