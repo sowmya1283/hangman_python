@@ -3,7 +3,7 @@
 
 Hangman is a word guessing game. It is considered as one of the classic game where a player will try to figure out the word by guessing letters one by one. This is an online game and it's useful for educational or entertainment purpose.
 
-Basic Rule of the game is that, user will be displayed with the blank spaces (underscores) to guess the word. Based on number of hints user can guess a letter for each one. If the guessed letter is in the word, then it replaces the corresponding underscore with a guessed letter. For each incorrect guess, a body part (head, arms, torso and legs) is added. After 6 guesses the game ends in a loss for the guessers.
+Basic Rule of the game is that, user will be displayed with the blank spaces (underscores) to guess the word. Based on number of hints user can guess a letter for each one. If the guessed letter is in the word, then it replaces the corresponding underscore with a guessed letter. For each incorrect guess, a body part (head, arms, torso and legs) is added. After 6 incorrect guesses the game ends in a loss for the player/user.
 
 Winning and losing of the game will depend on the user guessing all the letters in the word before the number of wrong guesses are over.
 
