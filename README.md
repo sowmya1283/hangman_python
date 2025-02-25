@@ -130,8 +130,7 @@ Objective of the game and instructions as follows:
 
 ![Screenshot of Exit as a selected option](assets/images/exit.png)
 
-* If the user somehow thinks he doesn't want to play the game after he initiated he can always choose to exit by entering 3. 
-And user will be displayed with a message saying, "Thank you, now you are exited the game."
+* If the user somehow thinks he doesn't want to play the game after he initiated, he can always choose to exit by entering 3. And user will be displayed with a message saying, "Thank you, now you are exited the game."
 
 ## **Future-Enhancements**
 ​
