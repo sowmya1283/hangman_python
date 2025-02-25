@@ -16,7 +16,7 @@ Click [here](https://hangmangame-python-93af8000a2f1.herokuapp.com/) to see the 
 
 
 ## Table of contents:
-1. [**Site Overview**](#site-overview)
+1. [**Site Overview**](#overview)
 1. [**Planning stage**](#planning-stage)
     * [***Target Audiences***](#target-audiences)
     * [***User Stories***](#user-stories)
@@ -45,7 +45,7 @@ Click [here](https://hangmangame-python-93af8000a2f1.herokuapp.com/) to see the 
 * People who want to improve their vocabulary.
 * People who to play hangman game online.
 * People who wants to get rid of boredom and entertain themselves.
-* Aspiring coders who want to learn python coding, can refer the cited tutorials to learn.
+* Aspiring coders who want to learn python coding for hangman game, can refer this code and the cited tutorials to learn.
 
 #### **User Stories:**
 * As a user, I want to start a new game of hangman.
