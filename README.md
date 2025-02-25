@@ -70,19 +70,16 @@ This proved to be very useful tool when it came to visualising the various stage
 This is the flow chart which assisted the development of the game:
 
 ![Lucid Chart](assets/images/hangmanflowchart.png)
-​
 
 #### **Colour Scheme:**
 ​
 * Not in scope for the current project.
 
-​
 #### **Typography**
 ​
 * Not in scope for the current project.
 
 ## **Current Features**
-
 
 #### **Menu**
 
@@ -94,7 +91,6 @@ Options Breakdown:
 * New Game: Starts a new game of Hangman, resetting the game state and selecting a new random word.
 * Instructions: Displays a screen or modal with the rules of the Hangman game, how to play, and how the game works.
 * Exit: Closes the game by saying thank you for playing hangman.
-
 ​
 #### **Instructions** 
 
@@ -112,7 +108,6 @@ Objective of the game and instructions as follows:
 * If you dont guess the word before 6 chances you lose the game.
 * Then you are asked to proceed by pressing enter again.
 
-
 #### **New Game**
 
 ![Screenshot of New Game](assets/images/newgame.png)
@@ -124,11 +119,12 @@ Objective of the game and instructions as follows:
 * Upon guessing a wrong letter, hangman ascii art will be displayed to the user. User will have 6 trails to guess the correct word. Initially when no incorerct guesses are made by the user, blank space with no hangman art is displayed. For 1 incorrect guess, head will be displayed. And for 2 incorrect guesses, head and torso will be displayed. This will be continued untill a visual representation of the hangman figure for wrong guess reaches 6. Once the game ends, this area shows whether the player won or lost.
 
 * If the user guesses the word correctly before the number of trails end, he wins the game. If the user cannot guess the word correctly. After the number of trials he will lose the game.
+  
+* Please find the below images for winning and losing the game scenarios.
 
 ![Screenshot of win condition](assets/images/winbeforeTrialends.png)
 
 ![Screenshot of win condition](assets/images/losingthegame.png)
-
 
 #### **Exit**
 
@@ -136,7 +132,6 @@ Objective of the game and instructions as follows:
 
 * If the user somehow thinks he doesn't want to play the game after he initiated he can always choose to exit by entering 3. 
 And user will be displayed with a message saying, "Thank you, now you are exited the game."
-
 
 ## **Future-Enhancements**
 ​
@@ -186,7 +181,6 @@ Further enhancements can be as follows.
 * The PEP8 Online Validator was down when creating this project, however I added a PEP8 validator to my workspace by running the command: "pip3 install pycodestyle". The results can be found [here](assets/images/pep8validator.png)
 
 * The validator flags a number of warnings and one error. Error was related to the equality operator is used in place of assignment operator. Other a quite number of minor warnings were present. All were related to the extra spaces and blank lines between the functions. In my final mentor session, I was informed about removing these extra spaces.
-
 ​
 ## **Bugs**
 ​
@@ -279,8 +273,6 @@ The following software are used:
 - Heroku is used for deploying the project.
 - Lucid Chart is used to create the flow chart of the project.
   
-
-  
 ## **Credits**
 
 ### **Media:**
@@ -298,7 +290,6 @@ The following software are used:
 
 * I have also used Chat-GPT to understand the Hangman game and its features. [Chat-GPT](https://chatgpt.com/)
 
-  
 ### **Honourable mentions**
 * Many thanks to my mentor, Richard Wells, who is always guiding me and helping me with the project. He is very dedicated and kind person who   gave me valuable feedback and ideas to enhance the project. 
 * Many thanks to code institute student support, they always helped with python errors and tutored me whenever required.
