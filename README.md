@@ -118,7 +118,7 @@ Objective of the game and instructions as follows:
 
 * Upon guessing a wrong letter, hangman ascii art will be displayed to the user. User will have 6 trails to guess the correct word. Initially when no incorerct guesses are made by the user, blank space with no hangman art is displayed. For 1 incorrect guess, head will be displayed. And for 2 incorrect guesses, head and torso will be displayed. This will be continued untill a visual representation of the hangman figure for wrong guess reaches 6. Once the game ends, this area shows whether the player won or lost.
 
-* If the user guesses the word correctly before the number of trails end, he wins the game. If the user cannot guess the word correctly. After the number of trials he will lose the game.
+* If the user guesses the word correctly before the number of trails end, he wins the game. If the user cannot guess the word correctly after the number of trials he will lose the game.
   
 * Please find the below images for winning and losing the game scenarios.
 
