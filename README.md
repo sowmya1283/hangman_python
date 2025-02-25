@@ -40,7 +40,6 @@ Click [here](https://hangmangame-python-93af8000a2f1.herokuapp.com/) to see the 
 ​
 ## **Planning Stage**
 
-
 #### **Target Audiences:**
 * People who likes word games.
 * People who want to improve their vocabulary.
@@ -48,7 +47,6 @@ Click [here](https://hangmangame-python-93af8000a2f1.herokuapp.com/) to see the 
 * People who wants to get rid of boredom and entertain themselves.
 * Aspiring coders who want to learn python coding, can refer the cited tutorials to learn.
 
-​
 #### **User Stories:**
 * As a user, I want to start a new game of hangman.
 * As a user, I want to learn and understand the instructions.
@@ -57,13 +55,11 @@ Click [here](https://hangmangame-python-93af8000a2f1.herokuapp.com/) to see the 
 * As a user, when I win or lose, I should get a clear message about game status.
 * As a user, when I provide invalid characters or input, I should be displayed with the proper error messages.
 
-​
 #### **Site Aims:**
 * To offer user a online, bug free and smooth version of classic hangman game. 
 * To provide a user interface which will be clean and simple with no need to reference external sources.
 * To provide clear instructions on how to play the game.
 * To provide an enjoyable user experience of playing hangman guessing game.
-
 
 #### **Lucid Chart:**
 
@@ -72,13 +68,11 @@ This proved to be very useful tool when it came to visualising the various stage
 
 This is the flow chart which assisted the development of the game:
 
-
 ![Lucid Chart](assets/images/hangmanflowchart.png)
 ​
 
 #### **Colour Scheme:**
 ​
-
 * Not in scope for the current project.
 
 ​
@@ -86,8 +80,8 @@ This is the flow chart which assisted the development of the game:
 ​
 * Not in scope for the current project.
 
-
 ## **Features**
+
 
 #### **Menu**
 
@@ -95,11 +89,11 @@ This is the flow chart which assisted the development of the game:
 
 * The game starts with the layout where user can select an option among "New Game", "Instructions" and "Exit". Based on their choice user will be redirected to the desired outcome.
 
-
 Options Breakdown:
 * New Game: Starts a new game of Hangman, resetting the game state and selecting a new random word.
 * Instructions: Displays a screen or modal with the rules of the Hangman game, how to play, and how the game works.
 * Exit: Closes the game by saying thank you for playing hangman.
+
 ​
 #### **Instructions** 
 
@@ -134,6 +128,7 @@ Objective of the game and instructions as follows:
 
 ![Screenshot of win condition](assets/images/losingthegame.png)
 
+
 #### **Exit**
 
 ![Screenshot of Exit as a selected option](assets/images/exit.png)
@@ -141,9 +136,7 @@ Objective of the game and instructions as follows:
 * If the user somehow thinks he doesn't want to play the game after he initiated he can always choose to exit by entering 3. 
 And user will be displayed with a message saying, "Thank you, now you are exited the game."
 
-<br>
 
-​
 ## **Future-Enhancements**
 ​
 There can be many areas where the game can be enhanced. But due to project tight deadline and due to the challenges the scope was limited
@@ -186,7 +179,6 @@ Further enhancements can be as follows.
 * Verdict ✅: PASS
 
 <br>
-​
 
 **Validators**
 
@@ -272,7 +264,6 @@ The following library was used:
 
 * Random - Used to generate random choice of words to be selected to play the game.
 
-
 ## **Software**
 
 The following software are used:
@@ -286,8 +277,6 @@ The following software are used:
 
 * Not in scope for the current project.
 ​
-<br>
-
 
 ## **Credits**
 
