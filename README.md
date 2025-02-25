@@ -140,15 +140,16 @@ Objective of the game and instructions as follows.
 
 * If the user guesses the word correctly before the number of trails end, he wins the game. If the user cannot guess the word correctly. After the number of trials he will lose the game.
 
-![Screenshot of win condition](assets/images/bs77-win-condition.png)
+![Screenshot of win condition](assets/images/winbeforeTrialends.png)
 
-* 
+![Screenshot of win condition](assets/images/losingthegame.png)
 
 #### **Exit**
 
 ![Screenshot of Exit as a selected option](assets/images/exit.png)
 
-* If the user choses to 
+* If the user somehow thinks he doesn't want to play the game after he initiated he can always choose to exit by entering 3. 
+And user will be displayed with a message saying, "Thank you, now you are exited the game."
 
 <br>
 
@@ -162,7 +163,7 @@ Further enhancements can be as follows.
 * Introduce different categories. (Currently only flower names/words are guessed.)
 * Option to randlomly quitting the game in between.
 * An hint system to get a user about the word
-
+* After exiting the game user should be presented again with Menu option if wants to check the instructions and then play again.
 ​
 ## **Testing Phase**
 ​
@@ -230,6 +231,11 @@ Some of the bugs were identified during testing. They are listed below.
 * ⚒️ - Initially menu items were wrongly ordered with incorrect numbering.
 * ✅ - Order of the Menu list was corrected along with the numbering.
 
+<br>
+
+* 🐞 - After exiting the game by choosing option 3, user have to refresh/reload the game
+* ⚒️ - After exiting the game, user is not provided an option to replay the game by displaying Menu again. (Refersh or reload is required)
+* ✅ - This feature is added as an enhacement to the current game.
 
 <br>
 
