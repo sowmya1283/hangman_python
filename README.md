@@ -72,7 +72,7 @@ Click [here](https://hangmangame-python-93af8000a2f1.herokuapp.com/) to see the 
 
 #### **Lucid Chart:**
 
-Project planning has been done with the help of Lucid Chart[LucidChart](https://www.lucidchart.com). Lucid chart is widely used for brainstorming, planning, and organizing any project. 
+Project planning has been done with the help of Lucid Chart [LucidChart](https://www.lucidchart.com). Lucid chart is widely used for brainstorming, planning, and organizing any project. 
 This proved to be very useful tool when it came to visualising the various stages invloved in this game.
 
 This is the flow chart which assisted the development of the game:
