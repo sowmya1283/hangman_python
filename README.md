@@ -14,6 +14,7 @@ The game is Python-based and uses functions, for loops, while loops and if/elif/
 
 Click [here](https://hangmangame-python-93af8000a2f1.herokuapp.com/) to see the final deployment of the game
 
+![Am I Responsive Screenshot](assets/images/hangman.png)
 
 ## Table of contents:
 1. [**Site Overview**](#site-overview)
@@ -69,7 +70,7 @@ This proved to be very useful tool when it came to visualising the various stage
 
 This is the flow chart which assisted the development of the game:
 
-![Lucid Chart](assets/images/hangmanflowchart.png)
+![Lucid Chart](assets/images/flowchart.png)
 
 #### **Colour Scheme:**
 ​
