@@ -222,6 +222,11 @@ Some of the bugs were identified during testing. They are listed below.
 
 <br>
 
+* 🐞 - If user chooses option 3, user is displayed with a incorrect message
+* ⚒️ - After exiting the game, user was displayed with old message saying- "Thank you for playing the hangman game"
+* ✅ - The message has been modified to "Thank you, now you have exited the game."
+
+<br>
 ## **Unfixed Bugs**
 
 * All the bugs which have been identified have been fixed and there are no known defects.
