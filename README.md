@@ -12,10 +12,7 @@ Loss: The game is lost if the guesser runs out of all the chances (i.e., if the 
 
 The game is Python-based and uses functions, for loops, while loops and if/elif/else statements to achieve the desired outcome. It features hangman ASCII art.
 
-
 Click [here](https://hangmangame-python-93af8000a2f1.herokuapp.com/) to see the final deployment of the game
-
-<br>
 
 
 ## Table of contents:
@@ -43,7 +40,6 @@ Click [here](https://hangmangame-python-93af8000a2f1.herokuapp.com/) to see the 
 ​
 ## **Planning Stage**
 
-<br>
 
 #### **Target Audiences:**
 * People who likes word games.
@@ -68,7 +64,6 @@ Click [here](https://hangmangame-python-93af8000a2f1.herokuapp.com/) to see the 
 * To provide clear instructions on how to play the game.
 * To provide an enjoyable user experience of playing hangman guessing game.
 
-<br>
 
 #### **Lucid Chart:**
 
@@ -79,9 +74,7 @@ This is the flow chart which assisted the development of the game:
 
 
 ![Lucid Chart](assets/images/hangmanflowchart.png)
-
-
-<br>​
+​
 
 #### **Colour Scheme:**
 ​
@@ -92,8 +85,6 @@ This is the flow chart which assisted the development of the game:
 #### **Typography**
 ​
 * Not in scope for the current project.
-
-​<br>
 
 
 ## **Features**
@@ -114,8 +105,10 @@ Options Breakdown:
 
 ![Screenshot of Instructions](assets/images/instructions.png)
 
-* The Instructions section of a Hangman game provides players with the necessary information on how to play, the game’s rules. 
-Objective of the game and instructions as follows.
+* The Instructions section of a Hangman game provides players with the necessary information on how to play, the game’s rules.
+  
+Objective of the game and instructions as follows:
+
 * The goal of Hangman is to guess a hidden word by suggesting letters, one at a time.
 * The computer will randomly select a word from the list.
 * You have to guess the word by entering a letter.
