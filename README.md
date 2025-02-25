@@ -162,7 +162,7 @@ Further enhancements can be as follows.
 * Introduce different categories. (Currently only flower names/words are guessed.)
 * Option to randlomly quitting the game in between.
 * An hint system to get a user about the word
-* After exiting the game user should be presented again with Menu option if wants to check the instructions and then play again.
+* After exiting the game user should be presented again with Menu option if he/she wants to check the instructions and then play again.
 ​
 ## **Testing Phase**
 ​
