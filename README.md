@@ -106,9 +106,9 @@ This is the flow chart which assisted the development of the game:
 
 
 Options Breakdown:
-New Game: Starts a new game of Hangman, resetting the game state and selecting a new random word.
-Instructions: Displays a screen or modal with the rules of the Hangman game, how to play, and how the game works.
-Exit: Closes the game by saying thank you for playing hangman.
+* New Game: Starts a new game of Hangman, resetting the game state and selecting a new random word.
+* Instructions: Displays a screen or modal with the rules of the Hangman game, how to play, and how the game works.
+* Exit: Closes the game by saying thank you for playing hangman.
 ​
 #### **Instructions** 
 
