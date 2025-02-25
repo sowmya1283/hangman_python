@@ -54,7 +54,8 @@ Click [here](https://hangmangame-python-93af8000a2f1.herokuapp.com/) to see the 
 * As a user, I want the game to run smoothly and bug-free.
 * As a user, when I win or lose, I should get a clear message about game status.
 * As a user, when I provide invalid characters or input, I should be displayed with the proper error messages.
-
+* As a user, I should be able to choose the menu options and should be able to get the correct responses.
+  
 #### **Site Aims:**
 * To offer user a online, bug free and smooth version of classic hangman game. 
 * To provide a user interface which will be clean and simple with no need to reference external sources.
