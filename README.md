@@ -34,9 +34,8 @@ Click [here](https://hangmangame-python-93af8000a2f1.herokuapp.com/) to see the 
 1. [**Deployment**](#deployment)
 1. [**Tech**](#tech)
 1. [**Credits**](#credits)
-    * [**Content**](#content)
     * [**Media**](#media)
-    * [**Honourable mentions**](#honorable-mentions)
+    * [**Honourable mentions**](#honourable-mentions)
 ​
 ## **Planning Stage**
 
