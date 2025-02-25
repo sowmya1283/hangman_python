@@ -76,7 +76,7 @@ def menu():
             display_instructions()
         elif choice == "3":
             can_continue = True
-            print("Thank you for playing Hangman")
+            print("Thank you, now you are exited the game.")
             exit()
         else:
             print("Invalid choice. Please try again")

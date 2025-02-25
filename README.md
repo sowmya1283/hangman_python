@@ -1,23 +1,23 @@
 # **The Hangman Game**
 ## **Overview**
 
-Hangman is a word guessing game. It is considered as one of the classic game where a player will try to figure out the word by guessing letters by entering one at a time. This is an online game and it's for educational or entertainment purpose.
+Hangman is a word guessing game. It is considered as one of the classic game where a player will try to figure out the word by guessing letters one by one. This is an online game and it's useful for educational or entertainment purpose.
 
-Basic Rule of the game is that, user will be displayed with the blank spaces (underscores) to guess the word. Based on number of hints user can guess a letter for each one. If the guessed letter is in the word, then it replaces the corresponding underscore with a guessed letter. For each incorrect guess, a body part (head, arms, torso and legs) is added. After of 6 guesses the game ends in a loss for the guessers.
+Basic Rule of the game is that, user will be displayed with the blank spaces (underscores) to guess the word. Based on number of hints user can guess a letter for each one. If the guessed letter is in the word, then it replaces the corresponding underscore with a guessed letter. For each incorrect guess, a body part (head, arms, torso and legs) is added. After 6 guesses the game ends in a loss for the guessers.
 
-Winning and losing of the game will depend on the user guessing all the letters in the word before the number of wrong guesses trails are over.
+Winning and losing of the game will depend on the user guessing all the letters in the word before the number of wrong guesses are over.
+
 Win: The game is won if the player guesses all the letters in the word before the hangman figure is fully drawn.
-Loss: The game is lost if the guesser runs out of chances (i.e., if the hangman is fully drawn and the word remains incomplete).
+Loss: The game is lost if the guesser runs out of all the chances (i.e., if the hangman is fully drawn and the word remains incomplete).
 
-The game is Python-based and uses functions, for loops, while loops and if/elif/else statements to achieve the desired outcome. It features space-based ASCII art, and contains various references to hangman characters.
+The game is Python-based and uses functions, for loops, while loops and if/elif/else statements to achieve the desired outcome. It features hangman ASCII art.
 
 
 Click [here](https://hangmangame-python-93af8000a2f1.herokuapp.com/) to see the final deployment of the game
 
-![Am I Responsive Screenshot](assets/images/bs1977-am-i-responsive.png)
-![Am I Responsive Screenshot](assets/images/bs1977-am-i-responsive-name.png)
+<br>
 
-​
+
 ## Table of contents:
 1. [**Site Overview**](#site-overview)
 1. [**Planning stage**](#planning-stage)
@@ -30,7 +30,7 @@ Click [here](https://hangmangame-python-93af8000a2f1.herokuapp.com/) to see the 
 1. [**Current Features**](#current-features)
     * [***Menu***](#menu)
     * [***Instructions***](#instructions)
-    * [***Play Game***](#play-game)
+    * [***New Game***](#new-game)
     * [***Exit***](#exit)
 1. [**Future-Enhancements**](#future-enhancements)
 1. [**Testing Phase**](#testing-phase)
@@ -100,43 +100,55 @@ This is the flow chart which assisted the development of the game:
 
 #### **Menu**
 
-* The game uses a Board class. It is used to create instances of the player and CPU and guess boards. Only the player and player_guess boards are printed to the terminal through the display_boards method. The class stores the board size, board owner and shield strength. There are methods to input ship coordinates, populate the board, logic for CPU guesses. There are also methods to check and validate user input as well as prevent any ships overlapping.
+![Screenshot of Menu](assets/images/menu_list.png)
+
+* The game starts with the layout where user can select an option among "New Game", "Instructions" and "Exit". Based on their choice user will be redirected to the desired outcome.
+
+
+Options Breakdown:
+New Game: Starts a new game of Hangman, resetting the game state and selecting a new random word.
+Instructions: Displays a screen or modal with the rules of the Hangman game, how to play, and how the game works.
+Exit: Closes the game by saying thank you for playing hangman.
 ​
 #### **Instructions** 
 
-![Screenshot of Instructions](assets/images/bs77-start-screen.png)
+![Screenshot of Instructions](assets/images/instructions.png)
 
-* The start screen features the iconic Star Wars introduction: "A long time ago, in a galaxy far, far away..." Beneath that is some very basic ASCII art depicting stars. There a short time delay using the time.sleep() function to allow the user to process the screen. They are then prompted to press enter.
+* The Instructions section of a Hangman game provides players with the necessary information on how to play, the game’s rules. 
+Objective of the game and instructions as follows.
+* The goal of Hangman is to guess a hidden word by suggesting letters, one at a time.
+* The computer will randomly select a word from the list.
+* You have to guess the word by entering a letter.
+* You have 6 chances to guess the word.
+* If you guess word before 6 chances, you win.
+* If you dont guess the word before 6 chances you lose the game.
+* Then you are asked to proceed by pressing enter again.
 
-![Screenshot of player name input](assets/images/bs77-name-input.png)
+<br>
 
-* The os.sys("clear") function is used to clear the screen and the user is then presented with ASCII text intended to emulate the Star Wars movie font. They are prompted to enter their name using the get_name function which stores the username in a variable for use in the game. They are then presented with a short welcome message and short backstory explaining enemy ships have entered the area. The user can press enter to proceed to the next screen.
+#### **New Game**
 
-#### **Play Game**
+![Screenshot of New Game](assets/images/newgame.png)
 
-![Screenshot of ship types](assets/images/bs77-ship-types.png)
+* This is the primary space where the game is played. It consists of several key components where the player interacts with the game, makes guesses, and can see the results of their actions. Here I will be explaining in detail about different functions and how the game has been developed.
 
-* The same os function is used to clear the terminal once again. The ship_type method is called so the user is presented with the four different types of ships at their disposal, along with the size of each. The ships are displayed sequentially in descending size order, on a slight delay using the time library.
+* The game has already consists of the list of words in a separate file called words.py. This file has been imported where the function to play the game is coded. When the user chooses 1 on the interface to play the game, hangman area without any ascii characters are displayed along with the word to be guessed as a series of blank spaces (underscore lines). User is asked to enter a letter or guess a letter based on the analysis by seeing the number of character spaces of the guessing word.
 
 ![Screenshot of legend](assets/images/bs77-legend.png)
 
-* Upon pressing enter, the game_rules function is called to display the symbols which will be used on the game boards. Once the user has processed the information, they are prompted to press enter again.
+* Upon guessing a wrong letter, hangman ascii art will be displayed to the user. User will have 6 trails to guess the correct word. Initially when no incorerct guesses are made by the user, blank space with no hangman art is displayed. For 1 incorrect guess, head will be displayed. And for 2 incorrect guesses, head and torso will be displayed. This will be continued untill a visual representation of the hangman figure for wrong guess reaches 6. Once the game ends, this area shows whether the player won or lost.
 
-* The following text explains the win condition which states that ten hits will be enough to win the game. There is a final prompt to press enter.
+* If the user guesses the word correctly before the number of trails end, he wins the game. If the user cannot guess the word correctly. After the number of trials he will lose the game.
 
 ![Screenshot of win condition](assets/images/bs77-win-condition.png)
 
-
-![Screenshot of player board and prompt to enter ship direction](assets/images/bs77-choose-direction.png)
-
-* os is used to clear the screen once again and the player board is printed to the terminal. It displays the player name and the shield strength at the starting value of 10. The place_ships method is called so the player is asked to place each ship by choosing whether it will be aligned horizontally or vertically. Any input other than 'h'/'H' or 'v'/'V' will be invalid and the user will be asked to try again. The process will loop until all ships have been assigned coordinates.
+* 
 
 #### **Exit**
 
-![Screenshot of player hitting ship](assets/images/bs77-hit-ship.png)
+![Screenshot of Exit as a selected option](assets/images/exit.png)
 
-* The populate_boards method adds the user and CPU ships to their respective boards. The user cannot see where the CPU ships are. The game is set up so the user goes first. The player_attack method takes input from the user to guess enemy ship coordinates on the x and y axes. The first CPU guess is a random choice on the board. Upon a successful hit, the CPU will attempt to guess on an adjacent tile. Click the highlighted text to see screenshots of the player entering invalid [row](assets/images/bs77-invalid-row.png) or [column](assets/images/bs77-invalid-column.png) coordinates. The user cannot enter the same coordinates twice. Most of the game logic is in the play_game function which handles updating and appending the relevant boards. It also handles decrementing the shield counter. The game will continue to run until either the player or CPU shield counters reaches zero.
-
+* If the user choses to 
 
 <br>
 
@@ -172,15 +184,16 @@ Further enhancements can be as follows.
 
 * Implementation 🏭: Check whether game worked as expected for invalid characters.
 * Test 🧪: I played the game on a local terminal with invalid character. Validation was not present initially
-* Result 🏆: Tests didnt work as expected results, after fixing the bug this test has been made pass.
+* Result 🏆: Tests didnt work as expected results at first, after fixing the bug this test has been made pass.
 * Verdict ✅: Initially test was failed and then after bug fix the test is PASS
 
 <br>
 
-* Implementation 🏭: Check whether user is able to select diffrent menu options and correspnding menu list is displayed
+* Implementation 🏭: Check whether user is able to select diffrent menu options and corresponding menu list is displayed
 * Test 🧪: Tried selecting different menu options.
 * Result 🏆: Game responded as expected.
 * Verdict ✅: PASS
+
 <br>
 ​
 
@@ -215,7 +228,7 @@ Some of the bugs were identified during testing. They are listed below.
 
 * 🐞 - Menu list was wrongly ordered.
 * ⚒️ - Initially menu items were wrongly ordered with incorrect numbering.
-* ✅ - Order of the Menu list was corrected and also the numbering.
+* ✅ - Order of the Menu list was corrected along with the numbering.
 
 
 <br>
