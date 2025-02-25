@@ -78,7 +78,7 @@ This proved to be very useful tool when it came to visualising the various stage
 This is the flow chart which assisted the development of the game:
 
 
-![Lucid Chart](assets/images/)
+![Lucid Chart](assets/images/hangmanflowchart.png)
 
 
 <br>​
@@ -104,7 +104,7 @@ This is the flow chart which assisted the development of the game:
 ​
 #### **Instructions** 
 
-![Screenshot of start screen](assets/images/bs77-start-screen.png)
+![Screenshot of Instructions](assets/images/bs77-start-screen.png)
 
 * The start screen features the iconic Star Wars introduction: "A long time ago, in a galaxy far, far away..." Beneath that is some very basic ASCII art depicting stars. There a short time delay using the time.sleep() function to allow the user to process the screen. They are then prompted to press enter.
 
@@ -173,25 +173,24 @@ Further enhancements can be as follows.
 * Implementation 🏭: Check whether game worked as expected for invalid characters.
 * Test 🧪: I played the game on a local terminal with invalid character. Validation was not present initially
 * Result 🏆: Tests didnt work as expected results, after fixing the bug this test has been made pass.
-* Verdict ✅: Initially test was pailed and then after bug fix the tests are PASS
+* Verdict ✅: Initially test was failed and then after bug fix the test is PASS
 
 <br>
 
-* Implementation 🏭: Check 
-* Test 🧪: I played the 
-* Result 🏆: The 
-* Verdict ✅: Test passed.
+* Implementation 🏭: Check whether user is able to select diffrent menu options and correspnding menu list is displayed
+* Test 🧪: Tried selecting different menu options.
+* Result 🏆: Game responded as expected.
+* Verdict ✅: PASS
 <br>
 ​
 
 **Validators**
 
-* The PEP8 Online Validator was down when creating this project, however I added a PEP8 validator to my workspace by running the command: "pip3 install pycodestyle". The results can be found [here](assets/images/bs1977-pycodestyle.png)
+* The PEP8 Online Validator was down when creating this project, however I added a PEP8 validator to my workspace by running the command: "pip3 install pycodestyle". The results can be found [here](assets/images/pep8validator.png)
 
-* The validator flags a number of warnings and one error. Error was related to the equality operator is used in place of assignment operator. Other a quite number of minor warnings were all related to the extra spaces and blank lines between the functions. In my final mentor session, I was informed about removing these extra spaces and fixing any errors.
+* The validator flags a number of warnings and one error. Error was related to the equality operator is used in place of assignment operator. Other a quite number of minor warnings were present. All were related to the extra spaces and blank lines between the functions. In my final mentor session, I was informed about removing these extra spaces.
 
 ​
-
 ## **Bugs**
 ​
 Some of the bugs were identified during testing. They are listed below.
@@ -223,7 +222,7 @@ Some of the bugs were identified during testing. They are listed below.
 
 ## **Unfixed Bugs**
 
-* All the bugs which have been identified have been fixed and there are no unknow defects.
+* All the bugs which have been identified have been fixed and there are no known defects.
 
 ## **Deployment**
 
