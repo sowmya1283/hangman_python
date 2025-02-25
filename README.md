@@ -1,5 +1,5 @@
 # **The Hangman Game**
-## **Overview**
+## **Site Overview**
 
 Hangman is a word guessing game. It is considered as one of the classic game where a player will try to figure out the word by guessing letters one by one. This is an online game and it's useful for educational or entertainment purpose.
 
@@ -16,13 +16,13 @@ Click [here](https://hangmangame-python-93af8000a2f1.herokuapp.com/) to see the 
 
 
 ## Table of contents:
-1. [**Site Overview**](#overview)
+1. [**Site Overview**](#site-overview)
 1. [**Planning stage**](#planning-stage)
     * [***Target Audiences***](#target-audiences)
     * [***User Stories***](#user-stories)
     * [***Site Aims***](#site-aims)
     * [***Lucid Chart***](#lucid-chart)
-    * [***Color Scheme***](#color-scheme)
+    * [***Color Scheme***](#colour-scheme)
     * [***Typography***](#typography)
 1. [**Current Features**](#current-features)
     * [***Menu***](#menu)
@@ -81,7 +81,7 @@ This is the flow chart which assisted the development of the game:
 ​
 * Not in scope for the current project.
 
-## **Features**
+## **Current Features**
 
 
 #### **Menu**
