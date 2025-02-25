@@ -33,8 +33,8 @@ Click [here](https://hangmangame-python-93af8000a2f1.herokuapp.com/) to see the 
 1. [**Testing Phase**](#testing-phase)
 1. [**Deployment**](#deployment)
 1. [**Tech**](#tech)
-1. [**Media**](#media)
 1. [**Credits**](#credits)
+    * [**Media**](#media)
     * [**Content**](#content)
     * [**Honourable mentions**](#honourable-mentions)
 ​
@@ -274,13 +274,14 @@ The following software are used:
 - Heroku is used for deploying the project.
 - Lucid Chart is used to create the flow chart of the project.
   
+
   
+## **Credits**
+
 ### **Media:**
 
 * Not in scope for the current project.
   
-## **Credits**
-
 ### **Content:**
 
 * A youtube tutorial which helped me to understand and build logic for hangman game was really great.
