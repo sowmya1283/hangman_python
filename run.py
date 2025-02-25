@@ -127,7 +127,7 @@ def play_game():
             display_answer(answer)
             print("YOU LOSE!")
             is_running = False
-
+            
 
 def display_instructions():
     """

@@ -1,15 +1,15 @@
 # **The Hangman Game**
 ## **Overview**
 
-Hangman is a word guessing game. its considered as one of the classic game where a player will try to figure out the word by guessing letters by entering one at a time. This is an online game and it's for educational or entertainment purpose.
+Hangman is a word guessing game. It is considered as one of the classic game where a player will try to figure out the word by guessing letters by entering one at a time. This is an online game and it's for educational or entertainment purpose.
 
-Basic Rule is that a user will be displayed with the blank spaces (underscores) to guess the word. Based on number of underscores user can guess a letter for each trails. There will be 6 trails. If the guessed letter is in the word, then it replaces the corresponding underscore with a guessed letter. For each incorrect guess, a body part (head, arms, torso and legs) is added. After of 6 guesses the game ends in a loss for the guessers.
+Basic Rule of the game is that, user will be displayed with the blank spaces (underscores) to guess the word. Based on number of hints user can guess a letter for each one. If the guessed letter is in the word, then it replaces the corresponding underscore with a guessed letter. For each incorrect guess, a body part (head, arms, torso and legs) is added. After of 6 guesses the game ends in a loss for the guessers.
 
-Winning and losing of the game will depend on the user guessing all the letters in the word before the no of wrong guesses trails are over.
+Winning and losing of the game will depend on the user guessing all the letters in the word before the number of wrong guesses trails are over.
 Win: The game is won if the player guesses all the letters in the word before the hangman figure is fully drawn.
 Loss: The game is lost if the guesser runs out of chances (i.e., if the hangman is fully drawn and the word remains incomplete).
 
-The game is Python-based and uses class, functions, for loops, while loops and if/elif/else statements to achieve the desired outcome. It features space-based ASCII art, and contains various references to hangman characters.
+The game is Python-based and uses functions, for loops, while loops and if/elif/else statements to achieve the desired outcome. It features space-based ASCII art, and contains various references to hangman characters.
 
 
 Click [here](https://hangmangame-python-93af8000a2f1.herokuapp.com/) to see the final deployment of the game
@@ -28,11 +28,10 @@ Click [here](https://hangmangame-python-93af8000a2f1.herokuapp.com/) to see the 
     * [***Color Scheme***](#color-scheme)
     * [***Typography***](#typography)
 1. [**Current Features**](#current-features)
-    * [***Data Module***](#data-module)
-    * [***Start Screen***](#start-screen)
-    * [***Pre-Game***](#pre-game)
-    * [***Gameplay***](#gameplay)
-    * [***Game Over***](#game-over)
+    * [***Menu***](#menu)
+    * [***Instructions***](#instructions)
+    * [***Play Game***](#play-game)
+    * [***Exit***](#exit)
 1. [**Future-Enhancements**](#future-enhancements)
 1. [**Testing Phase**](#testing-phase)
 1. [**Deployment**](#deployment)
@@ -51,7 +50,7 @@ Click [here](https://hangmangame-python-93af8000a2f1.herokuapp.com/) to see the 
 * People who want to improve their vocabulary.
 * People who to play hangman game online.
 * People who wants to get rid of boredom and entertain themselves.
-* Aspiring coders who want to learn python coding, can refer the cited tutorials.
+* Aspiring coders who want to learn python coding, can refer the cited tutorials to learn.
 
 ​
 #### **User Stories:**
@@ -59,29 +58,27 @@ Click [here](https://hangmangame-python-93af8000a2f1.herokuapp.com/) to see the 
 * As a user, I want to learn and understand the instructions.
 * As a user, I want to select from Menu (Whether I want to play game, see instructions or exit).
 * As a user, I want the game to run smoothly and bug-free.
-* As a user, when I win or lose I should get a clear message about game status.
-* As a user, when I provide invalid characters or inpit, I should be displayed with the proper error messages.
+* As a user, when I win or lose, I should get a clear message about game status.
+* As a user, when I provide invalid characters or input, I should be displayed with the proper error messages.
 
 ​
 #### **Site Aims:**
 * To offer user a online, bug free and smooth version of classic hangman game. 
-* To provide a user interface which is clean and simple with no need to refernce external sources.
-* To provide clear instructions on how to the game.
+* To provide a user interface which will be clean and simple with no need to reference external sources.
+* To provide clear instructions on how to play the game.
 * To provide an enjoyable user experience of playing hangman guessing game.
 
 <br>
 
 #### **Lucid Chart:**
 
-Project planning has been done with the Lucid Chart[LucidChart](https://www.lucidchart.com).
-
-
-This proved to be very useful tool when it came to visualising the various processes involved in recreating a Battleships style game. Whilst the concept is quite simple, the logic involved proved slightly more difficult.
+Project planning has been done with the help of Lucid Chart[LucidChart](https://www.lucidchart.com). Lucid chart is widely used for brainstorming, planning, and organizing any project. 
+This proved to be very useful tool when it came to visualising the various stages invloved in this game.
 
 This is the flow chart which assisted the development of the game:
 
 
-![Lucid Chart](assets/images/BS1977chart.png)
+![Lucid Chart](assets/images/)
 
 
 <br>​
@@ -115,7 +112,7 @@ This is the flow chart which assisted the development of the game:
 
 * The os.sys("clear") function is used to clear the screen and the user is then presented with ASCII text intended to emulate the Star Wars movie font. They are prompted to enter their name using the get_name function which stores the username in a variable for use in the game. They are then presented with a short welcome message and short backstory explaining enemy ships have entered the area. The user can press enter to proceed to the next screen.
 
-#### **Play Game Section**
+#### **Play Game**
 
 ![Screenshot of ship types](assets/images/bs77-ship-types.png)
 
@@ -134,7 +131,7 @@ This is the flow chart which assisted the development of the game:
 
 * os is used to clear the screen once again and the player board is printed to the terminal. It displays the player name and the shield strength at the starting value of 10. The place_ships method is called so the player is asked to place each ship by choosing whether it will be aligned horizontally or vertically. Any input other than 'h'/'H' or 'v'/'V' will be invalid and the user will be asked to try again. The process will loop until all ships have been assigned coordinates.
 
-#### **Exit Section**
+#### **Exit**
 
 ![Screenshot of player hitting ship](assets/images/bs77-hit-ship.png)
 
@@ -174,9 +171,9 @@ Further enhancements can be as follows.
 <br>
 
 * Implementation 🏭: Check whether game worked as expected for invalid characters.
-* Test 🧪: I played the game on a local terminal with invalid character. Validation was not present.
-* Result 🏆: Tests didnt work as expected results
-* Verdict ✅: FAIL
+* Test 🧪: I played the game on a local terminal with invalid character. Validation was not present initially
+* Result 🏆: Tests didnt work as expected results, after fixing the bug this test has been made pass.
+* Verdict ✅: Initially test was pailed and then after bug fix the tests are PASS
 
 <br>
 
@@ -191,10 +188,10 @@ Further enhancements can be as follows.
 
 * The PEP8 Online Validator was down when creating this project, however I added a PEP8 validator to my workspace by running the command: "pip3 install pycodestyle". The results can be found [here](assets/images/bs1977-pycodestyle.png)
 
-* The validator flags a number of minor warnings, all of which are related to the use of the ASCII art used in the start screen, win screen and lose screen functions. In my final mentor session, I was informed these are inconsequential and can essentially be ignored as they do not affect the program itself.
+* The validator flags a number of warnings and one error. Error was related to the equality operator is used in place of assignment operator. Other a quite number of minor warnings were all related to the extra spaces and blank lines between the functions. In my final mentor session, I was informed about removing these extra spaces and fixing any errors.
 
 ​
-​
+
 ## **Bugs**
 ​
 Some of the bugs were identified during testing. They are listed below.
@@ -212,16 +209,14 @@ Some of the bugs were identified during testing. They are listed below.
 ​<br>
 
 * 🐞 - User could enter special characters, digits or anything 
-* ⚒️ - The implementation for valid characters was not in the place.
-* ✅ - Implemented the valid character checking, if invalid character is enetred error is thrown to the user.
+* ⚒️ - The implementation for invalid characters was not in the place.
+* ✅ - Implemented the valid character checking, if invalid character is enetred, an error is thrown to the user.
 
 <br>
 
-* 🐞 - Menu list was wrongly ordered
-* ⚒️ - 
-* ✅ - I
-
-<br>
+* 🐞 - Menu list was wrongly ordered.
+* ⚒️ - Initially menu items were wrongly ordered with incorrect numbering.
+* ✅ - Order of the Menu list was corrected and also the numbering.
 
 
 <br>
