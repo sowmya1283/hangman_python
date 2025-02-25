@@ -34,6 +34,7 @@ Click [here](https://hangmangame-python-93af8000a2f1.herokuapp.com/) to see the 
 1. [**Deployment**](#deployment)
 1. [**Tech**](#tech)
 1. [**Credits**](#credits)
+    * [**Content**](#content)
     * [**Media**](#media)
     * [**Honourable mentions**](#honourable-mentions)
 ​
@@ -272,14 +273,13 @@ The following software are used:
 - Git (Gitpod and Github) : Used for version controlling.
 - Heroku is used for deploying the project.
 - Lucid Chart is used to create the flow chart of the project.
-
-### **Media:**
-
-* Not in scope for the current project.
-​
+  
 
 ## **Credits**
 
+### **Content:**
+
+* Not in scope for the current project.
 * A youtube tutorial which helped me to understand and build logic for hangman game was really great.
 [Bro Code](https://www.youtube.com/watch?v=ag8NtD1e0Kc). Based on this tutorial, I have used the logic to build the game. Then later it is enhanced with mentors guidance and suggestions.
 
@@ -288,7 +288,11 @@ The following software are used:
 * Course material in Scrimba was also very helpful for me to understand python in a short time. [Scrimba-Python](https://scrimba.com/learn-python-c03/~00)
 
 * I have also used Chat-GPT to understand the Hangman game and its features. [Chat-GPT](https://chatgpt.com/)
+  
+### **Media:**
 
+* Not in scope for the current project.
+  
 ### **Honourable mentions**
 * Many thanks to my mentor, Richard Wells, who is always guiding me and helping me with the project. He is very dedicated and kind person who   gave me valuable feedback and ideas to enhance the project. 
 * Many thanks to code institute student support, they always helped with python errors and tutored me whenever required.
