@@ -134,7 +134,6 @@ Objective of the game and instructions as follows.
 
 * The game has already consists of the list of words in a separate file called words.py. This file has been imported where the function to play the game is coded. When the user chooses 1 on the interface to play the game, hangman area without any ascii characters are displayed along with the word to be guessed as a series of blank spaces (underscore lines). User is asked to enter a letter or guess a letter based on the analysis by seeing the number of character spaces of the guessing word.
 
-![Screenshot of legend](assets/images/bs77-legend.png)
 
 * Upon guessing a wrong letter, hangman ascii art will be displayed to the user. User will have 6 trails to guess the correct word. Initially when no incorerct guesses are made by the user, blank space with no hangman art is displayed. For 1 incorrect guess, head will be displayed. And for 2 incorrect guesses, head and torso will be displayed. This will be continued untill a visual representation of the hangman figure for wrong guess reaches 6. Once the game ends, this area shows whether the player won or lost.
 
